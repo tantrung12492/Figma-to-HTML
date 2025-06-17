@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+/* Khôi phục lại chữ mặc định theo rem */
+body {
+  font-size: 1.6rem; /* 1.6rem = 16px */
+  font-family: poppins, sans-serif;
+}
+/* =================Common (thuộc tính chung cả website)============== */
+.btn {
+  display: inline-block;
+  padding: 11px 16px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #171100;
+  border-radius: 20px;
+}
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/*======================= Header======================================= */
+.header {
+  background: ##fffcf4;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 10px 21px;
+}
+.nav li.active a,
+.nav a:hover {
+  /* Khi rê chuột vào các thẻ a là con trực tiếp của thẻ nav */
+  color: #171100;
+  /*font-weight: 600; */ /* Độ đậm nhạt */
+  /* font-size: 2rem; */ /* Click chuột vào thì chữ to ra */
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+}
+.header .action {
+  margin-left: 49px;
+}
