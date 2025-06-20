@@ -14,6 +14,18 @@ body {
   font-family: poppins, sans-serif;
 }
 /* =================Common (thuộc tính chung cả website)============== */
+a {
+  text-decoration: none;
+}
+
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
 .btn {
   display: inline-block;
   padding: 11px 16px;
@@ -223,4 +235,42 @@ a {
 /* Tác động vào thẻ strong thứ 2 trong class desc-strong nằm trong class hero : dùng nth-child(2)  */
 .hero .desc-strong strong:nth-child(2) {
   margin-left: 28px;
+}
+/* ========= Phần Popular ========= */
+.popular {
+  padding: 65px 0px;
+
+  margin-top: 135px;
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+}
+.popular-top .controls-btn {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popular-top .controls-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
