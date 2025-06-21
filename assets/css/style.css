@@ -50,6 +50,21 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+/* Tối ưu : thẻ nào dài quá thì cho nó còn 1 2 dòng và k vỡ giao diện */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* Nếu sử dụng đồng thời 2 class : line-clamp và line-2 thì giá trị --line-clamp sẽ là 2 và sẽ đc đưa vào dòng code ở trên */
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+/* Trường hợp bị vỡ giao diện do 1 từ dài không có dấu cách */
+.break-all {
+  word-break: break-all;
+}
 /*======================= Header======================================= */
 .header {
   background: #fffcf4;
@@ -286,6 +301,7 @@ a {
   border-radius: 12px 12px 0 0;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
@@ -306,7 +322,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.popular .course-item .title a{
+.popular .course-item .title a {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
