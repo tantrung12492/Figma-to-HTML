@@ -471,3 +471,84 @@ a {
   width: 570px;
   height: 298px;
 }
+/* ========= Phần Blog ========= */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+.blogs .blog-top {
+  text-align: center;
+}
+.blogs .blog-top .desc {
+  margin: 16px auto 0;
+  width: 448px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696262;
+}
+.blogs .blog-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+.blogs .item {
+  width: 33.33%;
+  color: #ffffff;
+  border-radius: 16px;
+}
+.blogs .item:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+.blogs .item .thumb {
+  width: 100%;
+  /* width: 370px; */
+  height: 250px;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+}
+.blogs .item .info {
+  padding: 20px 20px 28px;
+}
+.blogs .item .date {
+  position: relative;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+.blogs .item .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  margin-right: 4px;
+}
+.blogs .item .date::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: -27px; /* gạch chân lòi ra 27px do lệch với thẻ cha nó là cái "21 November 2021" */
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+  left: 0;
+  bottom: 0;
+}
+.blogs .item .title {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #171100;
+}
+.blogs .item .btn {
+  margin-top: 12px;
+}
+.blogs .item .btn:hover {
+  background: var(--primary-color);
+}
