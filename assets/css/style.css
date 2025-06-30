@@ -552,3 +552,68 @@ a {
 .blogs .item .btn:hover {
   background: var(--primary-color);
 }
+/* ========= Phần Footer ========= */
+.footer {
+  background: #2e2100;
+  padding: 96px 135px 0;
+}
+.footer .row {
+  display: flex;
+  padding-bottom: 38px; /* đường gạch mỏng cách trên 38px */
+  border-bottom: 1px solid #59554b; /* đường gạch mỏng nằm "dưới" , độ dày 1px , nét liền , và màu*/
+}
+
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+.footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+.footer .socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+.footer .title {
+  padding-bottom: 14px;
+  display: inline-block;
+  padding-right: 48px; /*cho cái dòng gạch mỏng dài ra thêm 48px cho giống thiết kế*/
+  border-bottom: 1px solid #59554b;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #ffffff;
+}
+.footer .list {
+  margin-top: 28px;
+}
+.footer .list a {
+  font-size: 1.4rem;
+  line-height: 1.85;
+  color: #bfbcb2;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.footer .list li:last-child a {
+  margin-bottom: 0;
+}
+.footer .list strong {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer .copyright {
+  padding: 28px 0;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  text-align: center;
+  color: #807d74;
+}
